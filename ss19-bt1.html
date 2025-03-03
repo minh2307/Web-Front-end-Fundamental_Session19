@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let month = +prompt("Mời bạn nhập vào tháng muốn kiểm tra(0->12): ");
+        if (month < 0 && month > 12) {
+            console.log('tháng chỉ có 0->12');
+        }
+        else {
+            switch (month) {
+                case 1, 3, 5, 7, 8, 10, 12:
+                    console.log(`tháng ${month} có 31 ngày`);
+                    break;
+                case 4, 6, 9, 11:
+                    console.log(`tháng ${month} có 30 ngày`);
+                    break;
+                case 2:
+                    console.log(`Tháng 2 có 28 hoặc 29 năm nhuận`);
+                default:
+                    console.log(`lỗi`);
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>

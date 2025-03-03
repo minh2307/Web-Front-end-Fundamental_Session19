@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let money = prompt("Mời bạn nhập vào tiền tệ muốn đổi(VND or USD): ")
+        let VND, USD;
+        switch (money) {
+            case "VND":
+                VND = +prompt("Mời bạn nhập số tiền VND -> USD: ");
+                USD = VND / 23000;
+                USD.toFixed(2);
+                console.log(`${USD} USD`);
+                break;
+            case "USD":
+                USD = +prompt("Mời bạn nhập số tiền USD -> VND:");
+                VND = USD * 23000;
+                VND.toFixed(2);
+                console.log(`${VND} VND`);
+                break;
+            default:
+                console.log('Lỗi');
+                break;
+        }
+    </script>
+</body>
+
+</html>

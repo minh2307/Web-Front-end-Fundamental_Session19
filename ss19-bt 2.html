@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let text = prompt("Mời bạn nhập vào ký tự muốn kiểm tra: ");
+        let check;
+        if (text.length != 1) {
+            check = `${text} không phải là chữ cái`;
+        } else {
+            check = isNaN(text) ? `Ký tự ${text} là chữ cái` : `Ký tự ${text} là số`;
+        }
+        console.log(check);
+    </script>
+</body>
+
+</html>
