@@ -13,14 +13,8 @@
         let a = +prompt('số thứ nhất: ');
         let b = +prompt('số thứ hai: ');
         let c = +prompt('số thứ ba: ');
-        let max;
-        if (a >= b && a >= c) {
-            max = a;
-        } else if (b >= a && b >= c) {
-            max = b;
-        } else {
-            max = c;
-        }
+        let check = a < b ? `${b}` : `${a}`;
+        let max = check < c ? `${c}` : `${check}`;
         console.log(max);
     </script>
 </body>
